@@ -11,10 +11,10 @@ class Predictor(BasePredictor):
     def setup(self):
         """Load the model into memory to make running multiple predictions efficient"""
         self.tokenizer = AutoTokenizer.from_pretrained(
-            "./chatglm2-6b", trust_remote_code=True, local_files_only=True
+            "./chatglm2-6b-int4", trust_remote_code=True, local_files_only=True
         )
         model = AutoModel.from_pretrained(
-            "./chatglm2-6b", trust_remote_code=True, local_files_only=True
+            "./chatglm2-6b-int4", trust_remote_code=True, local_files_only=True
         ).cuda()
         patch_chat_glm.patch(model)
         self.model = model.eval()
