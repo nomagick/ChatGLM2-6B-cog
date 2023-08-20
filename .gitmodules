@@ -1,0 +1,4 @@
+[submodule "chatglm2-6b"]
+	path = chatglm2-6b
+	url = https://huggingface.co/THUDM/chatglm2-6b
+	branch = main
