@@ -1,4 +1,4 @@
-[submodule "chatglm2-6b"]
-	path = chatglm2-6b
-	url = https://huggingface.co/THUDM/chatglm2-6b
+[submodule "chatglm2-6b-32k"]
+	path = chatglm2-6b-32k
+	url = https://huggingface.co/THUDM/chatglm2-6b-32k
 	branch = main
